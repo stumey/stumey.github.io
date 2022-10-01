@@ -1,5 +1,5 @@
 # Stefan Tumey's website
 
-The theme for this website has been open-sourced as [Beautiful Jekyll](https://beautifuljekyll.com/).
+Source code for my personal site.
 
 To run locally, use `bundle exec jekyll serve -H <server IP>`.
