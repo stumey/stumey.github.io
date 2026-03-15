@@ -311,8 +311,9 @@ body {
 }
 
 #goku-character {
-  width: 96px;
-  height: 88px;
+  width: 160px;
+  height: auto;
+  display: block;
   position: relative;
   animation: goku-bob 1.2s ease-in-out infinite;
   filter: drop-shadow(0 0 12px rgba(245,130,31,0.6));
@@ -1228,6 +1229,15 @@ body {
   justify-content: center;
   flex-direction: column;
   text-align: center;
+  overflow-y: auto;
+  padding: 24px 16px;
+}
+
+#shenron-reveal-img {
+  max-height: 45vh;
+  width: auto;
+  max-width: 90vw;
+  filter: drop-shadow(0 0 60px #2dce89);
 }
 
 #shenron-sequence.active {

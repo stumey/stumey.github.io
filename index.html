@@ -57,89 +57,11 @@
      ================================================================ -->
 <div id="goku-wrapper" aria-hidden="true">
   <div id="goku-aura"></div>
-  <!-- Goku seated on Flying Nimbus — combined sprite -->
-  <svg id="goku-character" viewBox="0 0 96 88" xmlns="http://www.w3.org/2000/svg"
-       width="96" height="88" aria-hidden="true">
-
-    <!-- ── FLYING NIMBUS CLOUD ── -->
-    <!-- Shadow base -->
-    <ellipse cx="50" cy="83" rx="36" ry="6" fill="#b88000" opacity="0.5"/>
-    <!-- Fluffy cloud bumps (left to right) -->
-    <circle cx="17" cy="74" r="11" fill="#f7c800"/>
-    <circle cx="30" cy="69" r="14" fill="#f7d000"/>
-    <circle cx="48" cy="67" r="15" fill="#f7d000"/>
-    <circle cx="66" cy="70" r="12" fill="#f7d000"/>
-    <circle cx="78" cy="75" r="9"  fill="#f7c800"/>
-    <!-- Cloud body fill (connects the bumps) -->
-    <rect x="14" y="74" width="68" height="9" fill="#f7d000"/>
-    <!-- Highlight streak on cloud top -->
-    <ellipse cx="48" cy="68" rx="17" ry="5" fill="#ffe555" opacity="0.5"/>
-    <!-- Cloud underside darker edge -->
-    <ellipse cx="48" cy="81" rx="33" ry="5" fill="#e5a800"/>
-
-    <!-- ── GOKU — seated riding pose ── -->
-
-    <!-- Hair spikes (tall, iconic) -->
-    <polygon points="28,33 23,16 30,31" fill="#111"/>
-    <polygon points="33,28 30,10 37,27" fill="#111"/>
-    <polygon points="39,25 39,7  45,25" fill="#111"/>
-    <polygon points="45,27 48,11 51,27" fill="#111"/>
-    <polygon points="51,30 55,17 56,32" fill="#111"/>
-    <!-- Hair mass covering top/back of head -->
-    <path d="M22,36 Q21,25 29,19 Q36,13 45,15 Q53,17 57,26 Q59,34 56,37" fill="#111"/>
-
-    <!-- Head / face -->
-    <ellipse cx="40" cy="38" rx="13" ry="12" fill="#f5c5a0"/>
-
-    <!-- Eyebrows (slightly furrowed — determined look) -->
-    <path d="M31,31 Q35,29 39,31" stroke="#3a1a00" stroke-width="1.8" fill="none" stroke-linecap="round"/>
-    <path d="M42,31 Q46,29 50,31" stroke="#3a1a00" stroke-width="1.8" fill="none" stroke-linecap="round"/>
-    <!-- Eyes -->
-    <ellipse cx="35" cy="36" rx="2.8" ry="3.2" fill="#111"/>
-    <ellipse cx="45" cy="36" rx="2.8" ry="3.2" fill="#111"/>
-    <circle cx="36" cy="35" r="1"   fill="white"/>
-    <circle cx="46" cy="35" r="1"   fill="white"/>
-    <!-- Nose -->
-    <ellipse cx="40" cy="41" rx="1.3" ry="0.7" fill="#e09060"/>
-    <!-- Grin -->
-    <path d="M35,43.5 Q40,47.5 45,43.5" stroke="#b04828" stroke-width="1.4" fill="none" stroke-linecap="round"/>
-
-    <!-- Neck -->
-    <rect x="36" y="49" width="8" height="5" rx="2" fill="#f5c5a0"/>
-
-    <!-- Torso — orange gi, seated/hunched slightly forward -->
-    <path d="M25,53 Q24,66 28,69 L53,69 Q57,66 56,53 Q48,48 40,48 Z" fill="#f5821f"/>
-    <!-- Gi centre line -->
-    <line x1="40" y1="53" x2="40" y2="68" stroke="#c05800" stroke-width="1.5"/>
-    <!-- White V-collar -->
-    <path d="M28,53 L40,61 L52,53" fill="#fff" opacity="0.9"/>
-    <!-- Belt -->
-    <rect x="25" y="63" width="31" height="5" rx="1.5" fill="#111"/>
-    <!-- Belt buckle -->
-    <rect x="35" y="62" width="10" height="7" rx="1.5" fill="#c8860a"/>
-    <rect x="36.5" y="63.5" width="7" height="4"  rx="1"   fill="#e8a820"/>
-
-    <!-- Left arm — reaching forward/down toward cloud -->
-    <path d="M25,57 Q15,59 11,65" stroke="#f5821f" stroke-width="8" stroke-linecap="round" fill="none"/>
-    <ellipse cx="9" cy="67" rx="5.5" ry="5" fill="#f5c5a0"/>
-
-    <!-- Right arm — reaching back/right -->
-    <path d="M56,57 Q65,58 70,63" stroke="#f5821f" stroke-width="8" stroke-linecap="round" fill="none"/>
-    <ellipse cx="72" cy="65" rx="5.5" ry="5" fill="#f5c5a0"/>
-
-    <!-- Left leg — hanging, slightly bent -->
-    <path d="M30,68 Q26,74 23,78" stroke="#1a1a4a" stroke-width="9" stroke-linecap="round" fill="none"/>
-    <!-- Left boot -->
-    <path d="M17,77 Q17,84 26,83 Q26,77 22,76 Z" fill="#111"/>
-    <rect x="17" y="80" width="10" height="3" rx="1" fill="#f5821f"/>
-
-    <!-- Right leg -->
-    <path d="M51,68 Q55,74 58,78" stroke="#1a1a4a" stroke-width="9" stroke-linecap="round" fill="none"/>
-    <!-- Right boot -->
-    <path d="M55,77 Q56,84 65,83 Q64,77 60,76 Z" fill="#111"/>
-    <rect x="56" y="80" width="10" height="3" rx="1" fill="#f5821f"/>
-
-  </svg>
+  <img id="goku-character"
+       src="assets/img/goku.png"
+       alt="Goku on Flying Nimbus"
+       aria-hidden="true"
+       width="160" height="148">
 </div>
 
 <!-- ================================================================
@@ -627,100 +549,12 @@
       <span class="section-badge">▶ LEVEL 6 ◀</span>
       <h2 class="section-title">SUMMON SHENRON</h2>
 
-      <!-- Shenron SVG (contact section) -->
-      <svg id="shenron-contact-svg"
-           viewBox="0 0 500 220" width="500" height="220"
-           overflow="visible"
-           xmlns="http://www.w3.org/2000/svg"
-           style="max-width:100%;opacity:0;filter:drop-shadow(0 0 20px #2dce89)"
-           aria-hidden="true">
-
-        <!-- ── BODY (S-curve, left to right) ── -->
-        <!-- Dark outer layer -->
-        <path d="M130,110 Q175,58 225,110 Q275,162 330,110 Q385,58 440,110 Q465,128 490,118"
-              stroke="#145c34" stroke-width="34" fill="none" stroke-linecap="round"/>
-        <!-- Mid green -->
-        <path d="M130,110 Q175,58 225,110 Q275,162 330,110 Q385,58 440,110 Q465,128 490,118"
-              stroke="#2dce89" stroke-width="24" fill="none" stroke-linecap="round"/>
-        <!-- Inner highlight -->
-        <path d="M130,110 Q175,58 225,110 Q275,162 330,110 Q385,58 440,110 Q465,128 490,118"
-              stroke="#50ffb0" stroke-width="10" fill="none" stroke-linecap="round" opacity="0.3"/>
-        <!-- Belly stripe -->
-        <path d="M135,112 Q178,64 225,112 Q272,160 330,112 Q387,62 440,112 Q464,129 488,119"
-              stroke="#a0ffd8" stroke-width="8" fill="none" stroke-linecap="round" opacity="0.15"/>
-
-        <!-- ── DORSAL SPINES ── -->
-        <path d="M195,80  L188,55  L210,77"  fill="#f7d000"/>
-        <path d="M290,152 L283,127 L307,149" fill="#f7d000"/>
-        <path d="M370,75  L363,50  L388,72"  fill="#f7d000"/>
-        <path d="M455,118 L448,93  L472,115" fill="#f7d000"/>
-
-        <!-- ── SCALE ARCS ── -->
-        <path d="M215,100 Q230,86 245,100" stroke="#1a9966" stroke-width="2" fill="none" opacity="0.5"/>
-        <path d="M305,148 Q320,134 335,148" stroke="#1a9966" stroke-width="2" fill="none" opacity="0.5"/>
-        <path d="M400,90  Q415,76 430,90"  stroke="#1a9966" stroke-width="2" fill="none" opacity="0.5"/>
-
-        <!-- ── TAIL ── -->
-        <path d="M490,118 Q508,108 504,124 Q500,140 491,130" fill="#2dce89"/>
-
-        <!-- ── HEAD (facing left, at x≈130) ── -->
-        <!-- Lower jaw (open mouth) -->
-        <path d="M72,120 Q100,132 135,122 Q130,142 100,138 Q80,136 72,120 Z" fill="#145c34"/>
-        <!-- Upper skull / snout -->
-        <path d="M68,110 Q95,90 138,100 Q144,110 135,122 Q100,118 68,110 Z" fill="#2dce89"/>
-        <!-- Snout tip -->
-        <ellipse cx="70" cy="115" rx="10" ry="11" fill="#2dce89"/>
-        <!-- Head highlight -->
-        <path d="M78,98 Q108,84 136,100" stroke="#50ffb0" stroke-width="3" fill="none" opacity="0.5"/>
-        <!-- Underbelly of jaw -->
-        <path d="M72,120 Q100,130 133,124" stroke="#3defa0" stroke-width="5" fill="none" opacity="0.2"/>
-
-        <!-- Upper teeth -->
-        <polygon points="88,120  84,130 91,120"  fill="white" opacity="0.9"/>
-        <polygon points="99,118  95,129 102,118" fill="white" opacity="0.9"/>
-        <polygon points="110,116 106,127 113,116" fill="white" opacity="0.9"/>
-        <polygon points="121,115 117,126 124,115" fill="white" opacity="0.9"/>
-
-        <!-- ── EYE ── -->
-        <!-- Outer glow -->
-        <ellipse cx="112" cy="100" rx="13" ry="12" fill="#f7d000"/>
-        <!-- Iris -->
-        <ellipse cx="112" cy="100" rx="8"  ry="9"  fill="#c8860a"/>
-        <!-- Slit pupil -->
-        <ellipse cx="112" cy="101" rx="3"  ry="6"  fill="#0d0d0d"/>
-        <!-- Highlight -->
-        <circle  cx="115" cy="97"  r="2.5" fill="white" opacity="0.85"/>
-
-        <!-- ── HORNS (curving up and back) ── -->
-        <path d="M128,94  Q138,68 128,50" stroke="#f7d000" stroke-width="4.5" fill="none" stroke-linecap="round"/>
-        <circle cx="128" cy="47" r="5" fill="#f7d000"/>
-        <path d="M136,91  Q150,66 143,48" stroke="#f7d000" stroke-width="3.5" fill="none" stroke-linecap="round"/>
-        <circle cx="143" cy="45" r="4" fill="#f7d000"/>
-
-        <!-- ── WHISKERS / ANTENNAE (long, curving forward past snout) ── -->
-        <!-- Upper pair -->
-        <path d="M82,104 Q48,88 10,75"  stroke="#e8f5ee" stroke-width="2"   fill="none" stroke-linecap="round"/>
-        <path d="M82,104 Q40,76 -5,56"  stroke="#e8f5ee" stroke-width="1.5" fill="none" stroke-linecap="round" opacity="0.75"/>
-        <!-- Lower pair -->
-        <path d="M82,124 Q48,138 12,150" stroke="#e8f5ee" stroke-width="2"   fill="none" stroke-linecap="round"/>
-        <path d="M82,124 Q42,148 0,168"  stroke="#e8f5ee" stroke-width="1.5" fill="none" stroke-linecap="round" opacity="0.75"/>
-        <!-- Whisker-tip orbs -->
-        <circle cx="10"  cy="75"  r="3"   fill="#f7d000" opacity="0.9"/>
-        <circle cx="-5"  cy="56"  r="2.5" fill="#f7d000" opacity="0.8"/>
-        <circle cx="12"  cy="150" r="3"   fill="#f7d000" opacity="0.9"/>
-        <circle cx="0"   cy="168" r="2.5" fill="#f7d000" opacity="0.8"/>
-
-        <!-- ── SPARKLES ── -->
-        <circle cx="240" cy="42" r="4" fill="#f7d000" opacity="0.6">
-          <animate attributeName="opacity" values="0.6;1;0.6" dur="1.5s" repeatCount="indefinite"/>
-        </circle>
-        <circle cx="340" cy="178" r="3" fill="#f7d000" opacity="0.5">
-          <animate attributeName="opacity" values="0.5;0.9;0.5" dur="2s" repeatCount="indefinite"/>
-        </circle>
-        <circle cx="430" cy="46" r="4" fill="#2dce89" opacity="0.6">
-          <animate attributeName="opacity" values="0.6;1;0.6" dur="1.8s" repeatCount="indefinite"/>
-        </circle>
-      </svg>
+      <!-- Shenron PNG (contact section) -->
+      <img id="shenron-contact-svg"
+           src="assets/img/shenron.png"
+           alt="Shenron the Eternal Dragon"
+           aria-hidden="true"
+           style="max-width:100%;width:500px;opacity:0;filter:drop-shadow(0 0 20px #2dce89);">
 
       <p style="font-family:var(--font-pixel);font-size:8px;color:rgba(255,255,255,0.5);letter-spacing:2px;margin:16px 0 0;">
         YOUR WISH HAS BEEN GRANTED
@@ -781,128 +615,11 @@
      aria-modal="true"
      aria-label="Shenron has been summoned!">
 
-  <!-- Large Shenron SVG -->
-  <svg viewBox="0 0 600 300" width="560" height="260"
-       overflow="visible"
-       xmlns="http://www.w3.org/2000/svg"
-       style="max-width:90vw;filter:drop-shadow(0 0 40px #2dce89) drop-shadow(0 0 80px rgba(45,206,137,0.4))"
+  <!-- Large Shenron PNG -->
+  <img id="shenron-reveal-img"
+       src="assets/img/shenron.png"
+       alt="Shenron summoned"
        aria-hidden="true">
-
-    <!-- ── BODY — dramatic S-curve ── -->
-    <!-- Darkest outer edge / shadow -->
-    <path d="M170,150 Q225,72 290,150 Q355,228 420,150 Q485,72 545,140 Q568,155 585,148"
-          stroke="#0d3d20" stroke-width="54" fill="none" stroke-linecap="round"/>
-    <!-- Main dark green -->
-    <path d="M170,150 Q225,72 290,150 Q355,228 420,150 Q485,72 545,140 Q568,155 585,148"
-          stroke="#1a7a40" stroke-width="44" fill="none" stroke-linecap="round"/>
-    <!-- Mid green -->
-    <path d="M170,150 Q225,72 290,150 Q355,228 420,150 Q485,72 545,140 Q568,155 585,148"
-          stroke="#2dce89" stroke-width="30" fill="none" stroke-linecap="round"/>
-    <!-- Inner highlight -->
-    <path d="M170,150 Q225,72 290,150 Q355,228 420,150 Q485,72 545,140 Q568,155 585,148"
-          stroke="#50ffb0" stroke-width="12" fill="none" stroke-linecap="round" opacity="0.35"/>
-    <!-- Belly stripe -->
-    <path d="M174,152 Q228,76 290,152 Q352,228 420,152 Q484,76 543,142 Q566,156 582,149"
-          stroke="#c0ffe0" stroke-width="9"  fill="none" stroke-linecap="round" opacity="0.12"/>
-
-    <!-- ── DORSAL SPINES ── -->
-    <path d="M248,102 L238,65  L265,99"  fill="#f7d000"/>
-    <path d="M352,208 L342,171 L370,205" fill="#f7d000"/>
-    <path d="M448,100 L438,63  L465,97"  fill="#f7d000"/>
-    <path d="M540,120 L530,83  L558,117" fill="#f7d000"/>
-    <!-- Extra small accent spines -->
-    <path d="M210,120 L204,95  L220,117" fill="#e8c000" opacity="0.7"/>
-    <path d="M390,188 L384,163 L400,185" fill="#e8c000" opacity="0.7"/>
-    <path d="M492,112 L486,87  L502,109" fill="#e8c000" opacity="0.7"/>
-
-    <!-- ── SCALE ARCS ── -->
-    <path d="M265,136 Q282,118 299,136" stroke="#1a9966" stroke-width="2.5" fill="none" opacity="0.55"/>
-    <path d="M370,212 Q387,194 404,212" stroke="#1a9966" stroke-width="2.5" fill="none" opacity="0.55"/>
-    <path d="M462,130 Q479,112 496,130" stroke="#1a9966" stroke-width="2.5" fill="none" opacity="0.55"/>
-    <path d="M555,128 Q567,113 578,128" stroke="#1a9966" stroke-width="2"   fill="none" opacity="0.45"/>
-
-    <!-- ── TAIL ── -->
-    <path d="M585,148 Q608,135 603,155 Q598,175 588,162" fill="#2dce89"/>
-    <path d="M600,153 Q612,144 608,159" fill="#1a7a40"/>
-
-    <!-- ── HEAD (facing left, centered around x=170, y=150) ── -->
-    <!-- Lower jaw — open mouth, showing teeth -->
-    <path d="M90,158 Q128,174 175,162 Q170,188 130,182 Q100,180 90,158 Z" fill="#0d4a24"/>
-    <!-- Underjaw lighter -->
-    <path d="M92,162 Q128,176 172,165" stroke="#2dce89" stroke-width="6" fill="none" opacity="0.3"/>
-    <!-- Upper skull/snout -->
-    <path d="M85,143 Q118,112 178,126 Q186,140 175,162 Q128,155 85,143 Z" fill="#2dce89"/>
-    <!-- Snout tip -->
-    <ellipse cx="87" cy="150" rx="14" ry="16" fill="#2dce89"/>
-    <!-- Head top highlight -->
-    <path d="M98,128 Q138,108 177,128" stroke="#50ffb0" stroke-width="4" fill="none" opacity="0.45"/>
-    <!-- Forehead ridge -->
-    <path d="M105,130 Q145,116 178,130" stroke="#3defa0" stroke-width="7" fill="none" opacity="0.2" stroke-linecap="round"/>
-
-    <!-- Upper teeth (row of fangs) -->
-    <polygon points="108,156 103,170 111,156" fill="white" opacity="0.95"/>
-    <polygon points="122,153 117,168 125,153" fill="white" opacity="0.95"/>
-    <polygon points="136,150 131,165 139,150" fill="white" opacity="0.95"/>
-    <polygon points="150,148 145,163 153,148" fill="white" opacity="0.95"/>
-    <polygon points="163,147 158,162 166,147" fill="white" opacity="0.95"/>
-    <!-- Lower teeth (shorter) -->
-    <polygon points="112,162 108,172 116,162" fill="white" opacity="0.7"/>
-    <polygon points="128,159 124,169 132,159" fill="white" opacity="0.7"/>
-    <polygon points="144,157 140,167 148,157" fill="white" opacity="0.7"/>
-
-    <!-- ── EYE (large, golden, slitted pupil) ── -->
-    <!-- Outer glow ring -->
-    <ellipse cx="148" cy="128" rx="20" ry="18" fill="#f7d000" opacity="0.3"/>
-    <!-- Sclera / outer iris -->
-    <ellipse cx="148" cy="128" rx="16" ry="15" fill="#f7d000"/>
-    <!-- Inner iris -->
-    <ellipse cx="148" cy="128" rx="10" ry="11" fill="#c8860a"/>
-    <!-- Slit pupil -->
-    <ellipse cx="148" cy="129" rx="4"  ry="9"  fill="#050505"/>
-    <!-- Highlight -->
-    <circle  cx="153" cy="122" r="4" fill="white" opacity="0.9"/>
-    <circle  cx="156" cy="125" r="2" fill="white" opacity="0.6"/>
-    <!-- Brow ridge above eye -->
-    <path d="M132,115 Q148,108 166,115" stroke="#145c34" stroke-width="4" fill="none" stroke-linecap="round"/>
-
-    <!-- ── HORNS (dramatic, sweeping up and back) ── -->
-    <!-- Main left horn -->
-    <path d="M162,116 Q175,78  162,52" stroke="#f7d000" stroke-width="6" fill="none" stroke-linecap="round"/>
-    <circle cx="162" cy="48" r="7" fill="#f7d000"/>
-    <!-- Main right horn -->
-    <path d="M174,112 Q192,74  183,46" stroke="#f7d000" stroke-width="5" fill="none" stroke-linecap="round"/>
-    <circle cx="183" cy="42" r="6" fill="#f7d000"/>
-    <!-- Small secondary horn nub -->
-    <path d="M168,120 Q158,100 160,88" stroke="#e8a820" stroke-width="3" fill="none" stroke-linecap="round"/>
-
-    <!-- ── WHISKERS / ANTENNAE (long, dramatic, curving forward) ── -->
-    <!-- Upper whisker pair -->
-    <path d="M100,136 Q58,112 10,92"  stroke="#d8f5e8" stroke-width="2.5" fill="none" stroke-linecap="round"/>
-    <path d="M100,136 Q48,100 -12,74" stroke="#d8f5e8" stroke-width="2"   fill="none" stroke-linecap="round" opacity="0.8"/>
-    <!-- Lower whisker pair -->
-    <path d="M100,162 Q58,182 14,198" stroke="#d8f5e8" stroke-width="2.5" fill="none" stroke-linecap="round"/>
-    <path d="M100,162 Q52,192 -8,220"  stroke="#d8f5e8" stroke-width="2"   fill="none" stroke-linecap="round" opacity="0.8"/>
-    <!-- Whisker-tip orbs -->
-    <circle cx="10"  cy="92"  r="4" fill="#f7d000" opacity="0.95"/>
-    <circle cx="-12" cy="74"  r="3" fill="#f7d000" opacity="0.85"/>
-    <circle cx="14"  cy="198" r="4" fill="#f7d000" opacity="0.95"/>
-    <circle cx="-8"  cy="220" r="3" fill="#f7d000" opacity="0.85"/>
-
-    <!-- ── SPARKLES ── -->
-    <circle cx="300" cy="44" r="6" fill="#f7d000" opacity="0.7">
-      <animate attributeName="opacity" values="0.7;1;0.7" dur="1s" repeatCount="indefinite"/>
-      <animate attributeName="r"       values="6;9;6"     dur="1s" repeatCount="indefinite"/>
-    </circle>
-    <circle cx="420" cy="248" r="5" fill="#f7d000" opacity="0.6">
-      <animate attributeName="opacity" values="0.6;1;0.6" dur="1.4s" repeatCount="indefinite"/>
-    </circle>
-    <circle cx="520" cy="62"  r="7" fill="#2dce89" opacity="0.6">
-      <animate attributeName="opacity" values="0.6;1;0.6" dur="0.8s" repeatCount="indefinite"/>
-    </circle>
-    <circle cx="220" cy="220" r="4" fill="#f7d000" opacity="0.5">
-      <animate attributeName="opacity" values="0.5;0.9;0.5" dur="1.6s" repeatCount="indefinite"/>
-    </circle>
-  </svg>
 
   <div id="shenron-text">SHENRON APPEARS!</div>
   <div id="shenron-sub">YOUR WISH HAS BEEN GRANTED — ALL 7 BALLS COLLECTED</div>
