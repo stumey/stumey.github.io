@@ -1,15 +1,49 @@
-name: Beautiful Jekyll CI
-on: [push, pull_request]
+name: CI
+
+on:
+  push:
+  pull_request:
+
 jobs:
-  build:
-    name: Build Jekyll
+  lint:
+    name: Lint & validate
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - name: Build the site in the jekyll/builder container
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: 'npm'
+
+      - name: Install dev dependencies
+        run: npm ci
+
+      - name: Lint CSS
+        run: npx stylelint "assets/css/**/*.css"
+
+      - name: Lint JS
+        run: npx eslint "assets/js/**/*.js"
+
+      - name: Lint HTML
+        run: npx htmlhint index.html
+
+      - name: Check local asset references
         run: |
-          export JEKYLL_VERSION=3.8
-          docker run \
-          -v ${{ github.workspace }}:/srv/jekyll -v ${{ github.workspace }}/_site:/srv/jekyll/_site \
-          -e PAGES_REPO_NWO=${{ github.repository }} \
-          jekyll/builder:$JEKYLL_VERSION /bin/bash -c "chmod 777 /srv/jekyll && jekyll build --future"
+          python3 - <<'EOF'
+          import re, sys, pathlib
+
+          root = pathlib.Path(".")
+          html = (root / "index.html").read_text()
+          refs = re.findall(r'(?:src|href)=["\']([^"\'#][^"\']*)["\']', html)
+          local = [r for r in refs if not r.startswith(("http", "data:", "mailto:", "//"))]
+          missing = [r for r in local if not (root / r).exists()]
+
+          if missing:
+              print("MISSING local assets:")
+              for m in missing:
+                  print(f"  ✗  {m}")
+              sys.exit(1)
+          else:
+              print(f"  ✓  {len(local)} local asset references all resolve")
+          EOF

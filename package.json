@@ -1,0 +1,28 @@
+{
+  "name": "stumey.github.io",
+  "version": "1.0.0",
+  "description": "Source code for my personal site.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stumey/stumey.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/stumey/stumey.github.io/issues"
+  },
+  "homepage": "https://github.com/stumey/stumey.github.io#readme",
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.0.3",
+    "htmlhint": "^1.9.2",
+    "serve": "^14.2.6",
+    "stylelint": "^17.4.0",
+    "stylelint-config-standard": "^40.0.0"
+  }
+}
