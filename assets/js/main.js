@@ -41,7 +41,7 @@ function buildHUD() {
   const dotsContainer = document.getElementById('hud-dots');
   if (!dotsContainer) return;
 
-  SECTIONS.forEach((sec, i) => {
+  SECTIONS.forEach((sec) => {
     const dot = document.createElement('div');
     dot.className = 'hud-dot';
     dot.title = sec.label;

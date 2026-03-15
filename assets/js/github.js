@@ -70,16 +70,6 @@ const GitHub = (() => {
     } catch { /* ignore quota errors */ }
   }
 
-  function getLanguageColor(lang) {
-    const colors = {
-      'JavaScript': '#f1e05a', 'TypeScript': '#3178c6', 'C#': '#178600',
-      'Python': '#3572A5', 'HTML': '#e34c26', 'CSS': '#563d7c',
-      'Go': '#00ADD8', 'Rust': '#dea584', 'Solidity': '#AA6746',
-      'Java': '#b07219', 'Shell': '#89e051',
-    };
-    return colors[lang] || '#aaaaaa';
-  }
-
   function buildFeaturedCard(repo) {
     const meta = FEATURED_META[repo.name] || {};
     const desc = meta.description || repo.description || 'A featured project.';
@@ -102,30 +92,6 @@ const GitHub = (() => {
       <div class="project-desc">${desc}</div>
       <div class="project-tags">
         ${tags.map(t => `<span class="project-tag">${t}</span>`).join('')}
-      </div>
-      ${stars > 0 ? `<div class="project-stars">★ ${stars}</div>` : ''}
-    `;
-    return card;
-  }
-
-  function buildRepoCard(repo) {
-    const card = document.createElement('a');
-    card.className = 'project-card';
-    card.href = repo.html_url;
-    card.target = '_blank';
-    card.rel = 'noopener noreferrer';
-    card.setAttribute('data-name', repo.name);
-
-    const langColor = getLanguageColor(repo.language);
-    const stars = repo.stargazers_count || 0;
-
-    card.innerHTML = `
-      <div class="kamehameha-hover"></div>
-      <div class="project-move-label">SUPPORT MOVE</div>
-      <div class="project-name">${repo.name}</div>
-      <div class="project-desc">${repo.description || 'A repository by Stefan Tumey.'}</div>
-      <div class="project-tags">
-        ${repo.language ? `<span class="project-tag" style="border-color:${langColor};color:${langColor}">${repo.language}</span>` : ''}
       </div>
       ${stars > 0 ? `<div class="project-stars">★ ${stars}</div>` : ''}
     `;
