@@ -42,10 +42,10 @@ const GitHub = (() => {
   };
 
   const FALLBACK_REPOS = [
-    { name: 'saprism',        description: 'SAP-adjacent microservices platform for mortgage processing', stargazers_count: 0, language: 'C#',         html_url: `https://github.com/${USERNAME}/saprism` },
-    { name: 'encore',         description: 'Event-driven workflow orchestration engine',                  stargazers_count: 0, language: 'JavaScript',   html_url: `https://github.com/${USERNAME}/encore` },
+    { name: 'saprism',        description: 'Real-time B2B sales reporting platform for small and mid-market companies', stargazers_count: 0, language: 'Node.js',         html_url: `https://github.com/${USERNAME}/saprism` },
+    { name: 'encore',         description: 'The social network for concerts and music festivals',                  stargazers_count: 0, language: 'JavaScript',   html_url: `https://github.com/${USERNAME}/encore` },
     { name: 'crypto-lottery', description: 'Decentralized Ethereum lottery with Chainlink VRF',           stargazers_count: 2, language: 'Solidity',     html_url: `https://github.com/${USERNAME}/crypto-lottery` },
-    { name: 'UberClone',      description: 'Full-stack ride-sharing application with real-time tracking', stargazers_count: 1, language: 'JavaScript',   html_url: `https://github.com/${USERNAME}/UberClone` },
+    { name: 'UberClone',      description: 'Full-stack ride-sharing application with real-time tracking', stargazers_count: 1, language: 'React Native',   html_url: `https://github.com/${USERNAME}/UberClone` },
     { name: 'k8s-playground', description: 'Kubernetes lab environment with manifests and Helm charts',   stargazers_count: 0, language: 'YAML',         html_url: `https://github.com/${USERNAME}/k8s-playground` },
   ];
 
