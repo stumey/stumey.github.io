@@ -24,13 +24,13 @@ const SECTIONS = [
 
 // Goku x-positions per section (% from left, desktop only)
 const GOKU_STOPS = {
-  'hero':                 '10vw',
-  'skills':               '60vw',
-  'sagas':                '15vw',
-  'projects':             '65vw',
-  'education':            '20vw',
-  'dragon-balls-section': '55vw',
-  'contact':              '40vw',
+  'hero':                 '3vw',
+  'skills':               '78vw',
+  'sagas':                '5vw',
+  'projects':             '80vw',
+  'education':            '2vw',
+  'dragon-balls-section': '76vw',
+  'contact':              '4vw',
 };
 
 let currentSection = null;

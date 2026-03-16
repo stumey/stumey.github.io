@@ -96,7 +96,7 @@ const Animations = (() => {
         goku.style.bottom = '100px';
         setTimeout(() => {
           goku.style.transition = 'left 1.4s cubic-bezier(0.25,0.46,0.45,0.94), bottom 0.8s';
-          goku.style.left = '10vw';
+          goku.style.left = '3vw';
           goku.style.bottom = '80px';
           setTimeout(() => {
             goku.classList.remove('flying');

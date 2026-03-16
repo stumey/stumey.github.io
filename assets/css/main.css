@@ -303,7 +303,7 @@ body {
 #goku-wrapper {
   position: fixed;
   bottom: 80px;
-  left: 10vw;
+  left: 3vw;
   z-index: 50;
   pointer-events: none;
   will-change: transform;
@@ -311,7 +311,7 @@ body {
 }
 
 #goku-character {
-  width: 160px;
+  width: 110px;
   height: auto;
   display: block;
   position: relative;
